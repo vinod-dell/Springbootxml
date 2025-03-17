@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import java.io.PrintWriter;
 
 public class DemoXmlServlet extends HttpServlet {
 
@@ -21,6 +22,7 @@ public class DemoXmlServlet extends HttpServlet {
         } catch(Exception e) {
             e.printStackTrace();
         }
+        PrintWriter out = new resp.getWriter();
         out.println(pets);
         resp.getWriter().write("sleep 80Sec");
     }
