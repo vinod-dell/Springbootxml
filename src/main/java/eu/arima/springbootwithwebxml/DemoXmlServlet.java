@@ -22,7 +22,7 @@ public class DemoXmlServlet extends HttpServlet {
         } catch(Exception e) {
             e.printStackTrace();
         }
-        PrintWriter out = new resp.getWriter();
+        PrintWriter out = resp.getWriter();
         out.println(pets);
         resp.getWriter().write("sleep 80Sec");
     }
