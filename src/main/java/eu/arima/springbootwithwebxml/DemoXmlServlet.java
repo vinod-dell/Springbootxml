@@ -5,6 +5,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 public class DemoXmlServlet extends HttpServlet {
 
